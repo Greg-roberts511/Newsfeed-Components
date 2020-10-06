@@ -22,14 +22,14 @@ const createEmployeeCard = (employee, parentNode) => {
 
   div.appendChild(h3);
   div.appendChild(span);
-
   li.appendChild(div);
+
   parentNode.appendChild(li);
 };
 
 const ul = document.querySelector("ul");
 
-//employees.forEach((employee) => createEmployeeCard(employee, ul));
+employees.forEach((employee) => createEmployeeCard(employee, ul));
 
 function createCard(employee) {
   createEmployeeCard(employee, ul);
@@ -273,6 +273,8 @@ let swdata = [
   },
 ];
 
+//
+
 const createSWCard = (employee, parentNode) => {
   const div = document.createElement("div");
   const li = document.createElement("li");
@@ -294,4 +296,4 @@ const createSWCard = (employee, parentNode) => {
   parentNode.appendChild(li);
 };
 
-swdata.forEach((e) => createSWCard(e, ul));
+//swdata.forEach((e) => createSWCard(e, ul));
