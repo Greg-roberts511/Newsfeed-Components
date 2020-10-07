@@ -32,9 +32,6 @@ let menuItems = [
   Step 6: Use 'menuMaker' to create a menu using the 'menuItems' array, and append the returned menu to the header.
 */
 
-const header = document.querySelector(".header");
-const button = document.querySelector(".menu-button");
-
 function menuMaker(menu) {
   //create elements
   const div = document.createElement("div");
@@ -59,5 +56,8 @@ function menuMaker(menu) {
 
   return div;
 }
+
+const header = document.querySelector(".header");
+const button = document.querySelector(".menu-button");
 
 header.appendChild(menuMaker(menuItems));

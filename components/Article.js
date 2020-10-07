@@ -115,10 +115,48 @@ const data = [
   Refresh the page to see the new article.
 */
 
-const articleMaker = () => {
-  let div = document.createElement("div");
-  let h2 = document.createElement("h2");
-  let pDate = document.createElement();
-};
+function articleMaker(obj) {
+  //create elements
+  const div = document.createElement("div");
+  const h2 = document.createElement("h2");
+  const datep = document.createElement("p");
+  const firstP = document.createElement("p");
+  const secondP = document.createElement("p");
+  const thirdP = document.createElement("p");
+  const btn = document.createElement("p");
 
-articleMaker.forEach();
+  //text content
+
+  h2.textContent = obj["title"];
+  datep.textContent = obj.date;
+  firstP.textContent = obj.firstParagraph;
+  secondP.textContent = obj.secondParagraph;
+  thirdP.textContent = obj.thirdParagraph;
+  btn.textContent = "Open";
+
+  //set classes
+  div.classList.add("article");
+  datep.classList.add("date");
+  btn.classList.add("expandButton");
+
+  //apend
+  div.appendChild(h2);
+  div.appendChild(datep);
+  div.appendChild(firstP);
+  div.appendChild(secondP);
+  div.appendChild(thirdP);
+  div.appendChild(btn);
+
+  // event listener
+  btn.addEventListener("click", () => {
+    article.classList.toggle("article-open");
+  });
+
+  return div;
+}
+
+const content = document.querySelector(".articles");
+
+data.forEach((item) => {
+  content.appendChild(articleMaker(item));
+});
