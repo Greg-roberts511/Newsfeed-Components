@@ -126,8 +126,7 @@ function articleMaker(obj) {
   const btn = document.createElement("p");
 
   //text content
-
-  h2.textContent = obj["title"];
+  h2.textContent = obj.title;
   datep.textContent = obj.date;
   firstP.textContent = obj.firstParagraph;
   secondP.textContent = obj.secondParagraph;
@@ -149,7 +148,7 @@ function articleMaker(obj) {
 
   // event listener
   btn.addEventListener("click", () => {
-    article.classList.toggle("article-open");
+    div.classList.toggle("article-open");
   });
 
   return div;
