@@ -115,6 +115,10 @@ const data = [
   Refresh the page to see the new article.
 */
 
-const articleMaker = () => {};
+const articleMaker = () => {
+  let div = document.createElement("div");
+  let h2 = document.createElement("h2");
+  let pDate = document.createElement();
+};
 
 articleMaker.forEach();
