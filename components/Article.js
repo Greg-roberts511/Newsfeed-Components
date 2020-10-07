@@ -87,6 +87,12 @@ const data = [
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`,
   },
+
+  {
+    title: `hello cruel world `,
+    date: `10/6/2020`,
+    firstParagraph: `i eat all teh food`,
+  },
 ];
 
 /*
